@@ -1,0 +1,147 @@
+<!-- Curricumlum Vitae -->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<title>Curricumlum Vitae</title>
+		<style type="text/css">
+
+			body {
+				color: white;
+				background-color: black;
+				width: 80%;
+				margin: auto;
+				text-align: center;
+				font-family: cursive;
+			}
+
+			a, h1, h2, h3, h4 {
+				color: lightblue;
+			}
+
+			#title {
+				max-width: 100%;
+				min-width: 80%;
+			}
+
+			#photo {
+				min-width: 1%;
+				max-width: 40%;
+			}
+
+			/*-- Bullet Points:
+			StackOverflow. n.d. How do I get the bullet points of a <ul> to center with the text? Accessed online:
+			https://stackoverflow.com/questions/28977320/how-do-i-get-the-bullet-points-of-a-ul-to-center-with-the-text [11 January 2023] --*/
+			ul {
+		    	list-style-position: inside;
+			}
+
+			li {
+				text-align: left;
+				list-style-type: circle;
+			}
+
+			#contactMe, #skills {
+				text-align: left;
+			}
+
+			/*-- Grid section:
+			Codecademy. n.d. Learn CSS: Grid. Accessed online:
+			https://www.codecademy.com/learn/premium-intermediate-css-css-grid/modules/premium-learn-css-grid/cheatsheet [11 January 2023] --*/
+			.sect{
+				display: inline-grid;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<!-- Header photo -->
+		<img id="title" 
+		src="Images/Image1.jpg"
+		alt="Image cannot be viewed."
+		/>
+
+		<h1>Curricumlum Vitae</h1>
+			<h2>Jesslyn Bossau</h2>
+		
+				<h3>About me</h3>
+					<p>Studying at Stellenbosch University established and sharpened my interest in different facets of both electrical and mechanical systems. After graduating I have been eager to learn and practically apply my engineering knowledge in industry. I also aspire to continue learning and to broaden my skill set by applying my problem-solving expertise in the field of software development. I am excited about the possibility to grow as an engineer and contribute to society. I hope to apply my knowledge to help people and solve problems.</p>
+
+
+					<!-- Photo -->
+							<!-- StackOverflow. n.d. Split Div Into 2 Columns Using CSS. Accessed online:
+							hhttps://stackoverflow.com/questions/1964297/split-div-into-2-columns-using-css [11 January 2023] -->
+				   <img id="photo" 
+						src="https://media.licdn.com/dms/image/C4D03AQG2un3X7PIlNA/profile-displayphoto-shrink_800_800/0/1652615518120?e=1678924800&v=beta&t=vo-WhB2eSbVif2COeAS1Mi4LDrGNCwY5T-gBncIg41E"
+						alt="Image cannot be viewed."
+						/>
+
+					<!-- Split into table format -->
+					<div class="row">
+						<div class="col"; style="width: 30%; float:left">
+							
+						</div>
+
+						<div class="col"; style="width: 70%; float:right">
+							<!-- Contact details -->
+						   <h3 id = "contactMe">Contact details</h3>
+								<ul>
+									<li>Name: Jesslyn Bossau</li>
+									<li>Email address: jesslyn.bossau@gmail.com</li>
+									<li>LinkedIn: <a href="https://www.linkedin.com/in/jesslyn-bossau-298b5b1ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRJc%2Fw30hSdqiIMaV0xaVtw%3D%3D">View my profile.</a> </li>
+								</ul>
+
+							<!-- Skill list -->
+							<h3 id = "skills">Skills</h3>
+								<ul>
+									<li>Vibration Analysis</li>
+									<li>Finite Element Analysis</li>
+									<li>Research</li>
+									<li>Matlab</li>
+									<li>Python</li>
+									<li>Java</li>
+									<li>Structured Query Language</li>
+									<li>Hyper Text Markup Language</li>
+								</ul>
+						</div>
+					</div>
+			
+		<div class = "sect">
+			<!-- Education and work experience with some project descriptions -->
+			<h3>Education</h3>
+				<h4>2014</h4>
+					<p>Matriculated with a Namibia Senior Secondary Certificate Higher Level (NSSCH). Subjects include: accounting,
+					biology, foreign language German, mathematics, physical science and first language English.
+					</p>
+
+				<h4>2015-2018</h4>
+					<p>Graduated with a cum laude in Mechatronic Engineering at Stellenbosch University. Granted membership to the Golden
+					Key International Honour Society in 2016.
+					</p>
+
+				<h4>2019-2020</h4>
+					<p>Graduated with a cum laude master’s degree in Mechatronic Engineering. My research focused on vibration signal
+					processing techniques, an operational modal analysis and structural fatigue considerations. As part of my master’s
+					research project I had the privilege of taking part in the Southern oCean seAsonaL Experiment (SCALE) voyages on
+					board a polar supply and research vessel, the SA Agulhas II. The data and experience gained through these voyages allowed me to investigate my master’s thesis topic titled “The Detection and Quantification of Wave Slamming from Full-Scale Measurements on a Polar Vessel”.
+					<a href="https://scholar.sun.ac.za/handle/10019.1/109293">View my thesis.</a>
+					</p>
+
+				<h4>2022-2023</h4>
+					<p>Completed a 6 month part-time online software engineering course where I learnt Python and Java. I also learnt how to create and work with databases as well as some front-end development skills. I compeleted several projects, which helped me put my newfound knowledge into practice.
+					The Python projects had various applications, namely calculating the interest on an investment or a home loan repayment amount, a project management system and a stock taking system. The Java programs were written with the common goal of implementing a project management system. However, the first employs object-oriented programming (OOP) and the second uses structured query language (SQL).
+					<a href = "#contactMe">Contact me<a/> to request access to my private <a href="https://github.com/JessBossau?tab=repositories">GitHub repositories.</a>
+					</p>
+
+			<h3>Work Experience</h3>
+				<h4>DeltaV Aerospace 2021 - present</h4>
+					<p>I have applied my vibration knowledge, which I gained from my master’s degree, to investigate the vibration of aerospace designs. Vibration data is primarily post processed using Octave/Matlab scripts. I also perform Finite element Analysis (FEA) simulations on structural components of design projects. The FEAs approximate the natural frequencies and mode shapes of the designed structures. The maximum design loads are also applied in the FEAs to determine the total deformation and the maximum stresses and strains that could arise. The design of components can then be optimized to improve functionality and minimize structural failures.
+					</p>
+		</div>		
+
+	</body>
+
+</html>
